@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Juan Bermejo Gallego">
+      <meta name="description" content="1st assignment for the HTML course of UW Continuing Education Training">
+      <meta name="keywords" content="HTML, first assignment, elements, tags, attributes, values">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HTML100 Asignment Lesson One Semantic Elements</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <style media="screen">
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: verdana, sans-serif;
+        }
+        #top {
+          display: flex;
+        }
+        .logo {
+          font-size: 3em;
+          padding: 40px;
+          float: left;
+        }
+        /* Navigation */
+        .navbar {
+            margin-right: 20px;
+        }
+        .navbar ul li {
+          display: inline;
+          padding: 20px;
+        }
+        ul {
+          padding: 0;
+          margin: 20px;
+          text-align: center;
+        }
+        a {
+          text-decoration: none;
+          padding: 10px;
+          color: #000;
+        }
+        .navbar a:hover {
+          font-weight: bold;
+        }
+        /* Section */
+        section {
+          margin: 0;
+          padding: 0;
+        }
+        /* Anchor to Navbar */
+        .main-menu {
+          text-decoration: none;
+          color: black;
+          padding: 0;
+          margin: 0;
+        }
+        .main {
+          background-color: #DAE0E7;
+          padding: 20px;
+          color: #384656;
+          text-align: center;
+        }
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          border-radius: 10px;
+        }
+        #services {
+          background-color: #F7F2F2;
+          padding: 20px;
+          color: #191010;
+        }
+        .services {
+          color: #191010;
+          text-align: center;
+        }
+        #philosophy {
+          background-color: #F8FAEF;
+          padding: 20px;
+          color: #056124;
+        }
+        .philosophy {
+          color: #078832;
+          text-align: center;
+        }
+        #about {
+          background-color: #CED8DF;
+          padding: 20px;
+          color: #384A56;
+        }
+        .about {
+          color: #3F334D;
+          text-align: center;
+        }
+        #destinations {
+          background-color: #FCFAFA;
+          padding: 20px;
+          color: #5E5167;
+        }
+        .destination {
+          color: #3F334D;
+          text-align: center;
+        }
+        /* Footer */
+        #contact {
+          margin: 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: .5fr 1.5fr 1fr;
+          background-color: #3F334D;
+        }
+        .footer {
+          float: left;
+          padding: 20px;
+          color: #F5F4F6;
+        }
+        .client-form {
+          float: right;
+          padding: 20px;
+          color: #CBC2D6;
+        }
+        h2.footer {
+          display: inline;
+          margin: 0.83em;
+          padding: 0;
+        }
+        h3.footer {
+          display: inline;
+          margin: 0.83em;
+          padding: 0;
+        }
+        @media only screen and (max-width: 880px) {
+          pre.logo {
+            display: block;
+            float: none;
+            width: 100%;
+            font-size: 2em;
+            margin: 0;
+          }
+          i {
+            display: block;
+            float: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+          }
+          .navbar ul li {
+            display: block;
+            float: none;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+          }
+          .navbar {
+            margin-right: 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      </style>
+   </head>
+   <body>
+      <!-- Header  -->
+      <header id="top">
+         <pre class="logo">b o n
+  v o y a g e
+            <i>travels</i></pre>
+      </header>
+        <!-- Navigation Bar -->
+         <nav class="navbar" aria-label="navigation menu">
+            <ul>
+               <li><a title="home" href="#">Home</a></li>
+               <li><a title="services" href="#services">Services</a></li>
+               <li><a title="philosophy" href="#philosophy">Philosophy</a></li>
+               <li><a title="about" href="#about">About</a></li>
+               <li><a title="destinations" href="#destinations">Destinations</a>
+               <li><a title="contact" href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      <hr>
+      <!-- Section -->
+      <section>
+         <header class="main">
+            <h1>Where We Make Your Dreams Come True</h1>
+              <img src="venice.jpg" alt="Venice Grand Canal">
+                <p><small>A perspective from The Grand Canal, Venice by<cite>— Juan Bermejo Gallego</cite></small></p>
+         </header>
+         <!-- Sub-sections -->
+         <article id="services">
+            <header>
+             <a href="#" class="main-menu">
+                  <h2 class="services">What Can We Do</h2>
+               </a>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </article>
+         <article id="philosophy">
+            <header>
+               <a href="#" class="main-menu">
+                  <h2 class="philosophy">Our Philosophy</h2>
+               </a>
+            </header>
+            <p>Our <em>goals</em> are based on these four core principals:</p>
+            <!-- Ordered List -->
+            <ol type="1">
+               <li>Positivity</li>
+               <li>Sustainability</li>
+               <li>Connectivity</li>
+               <li>Humanity</li>
+            </ol>
+         </article>
+         <article id="about">
+            <header>
+               <a href="#" class="main-menu">
+                  <h2 class="about">Who We Are</h2>
+               </a>
+            </header>
+            <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud <i>exercitation</i> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </article>
+         <article id="destinations">
+            <header>
+               <a href="#" class="main-menu">
+                  <h2 class="destination">Destinations</h2>
+               </a>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <br>
+            <!-- Table -->
+            <div class="table">
+               <h3 style="text-align: center;">Our Popular Destinations Around The World</h3>
+               <table style="width: 100%;">
+                  <tbody>
+                     <tr>
+                        <!-- table row -->
+                        <th>Africa</th>
+                        <!-- table head -->
+                        <th>Asia</th>
+                        <th>Australia</th>
+                        <th>Europe</th>
+                        <th>North-America</th>
+                        <th>South-America</th>
+                     </tr>
+                     <tr style="text-align: center">
+                        <td>Cairo, Egypt</td>
+                        <!--table data -->
+                        <td>Maldivas</td>
+                        <td>Sydney, Australia</td>
+                        <td>Venice, Italy</td>
+                        <td>Grand Canyon, US</td>
+                        <td>Patagonia, Argentine</td>
+                     </tr>
+                     <tr style="text-align: center">
+                        <td>Marrakech, Morocco</td>
+                        <td>Phuket, Thailand</td>
+                        <td>South Island, New Zealand</td>
+                        <td>M&aacute;laga, Spain</td>
+                        <td>Yucat&aacute;n Peninsula, Mexico</td>
+                        <td>Machu Pichu, Peru</td>
+                     </tr>
+                     <tr style="text-align: center">
+                        <td>Serengeti National Park, Tanzania</td>
+                        <td>Bangkok, India</td>
+                        <td>Tasmania</td>
+                        <td>Dubrovnik, Croatia</td>
+                        <td>New York City, US</td>
+                        <td>Rio Janeiro, Brazil</td>
+                     </tr>
+                     <tr style="text-align: center">
+                        <td>Cape Town, South Africa</td>
+                        <td>Hanoi, Vietnam</td>
+                        <td>Great Barrier Reef, Australia</td>
+                        <td>Athens, Greece</td>
+                        <td>Hawaiian Islands, US</td>
+                        <td>Easter Island, Chile</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <br>
+            <p>Due to the Covid-19 pandemic, some of the destinations shown on the list above are <strong>not available</strong> or may have <strong>some restrictions</strong>.</p>
+            <br>
+            <aside>
+               <blockquote cite="https://www.earthtrekkers.com/best-travel-quotes-images/">
+                  <p>Once a year, go someplace you’ve never been before.</p>
+                  <cite>— Dalai Lama</cite>
+               </blockquote>
+            </aside>
+         </article>
+      </section>
+      <!-- Footer -->
+      <footer id="contact">
+        <aside class="footer">
+         <a href="#" class="main-menu">
+          <h2 class="footer">Stay Together</h2>
+            <br>
+          <h3 class="footer">Being Connected</h3>
+         </a>
+        </aside>
+        <!-- Form -->
+        <aside class="client-form">
+          <form class="form" action="index.html" method="post" aria-label="form">
+            <label>Name</label>
+              <br>
+                <input type="text" name="name" aria-label="enter your name here" placeholder="John Doe">
+              <br>
+            <label>Email</label>
+              <br>
+                <input type="email" required name="email" aria-label="enter your email here" placeholder="johndoe@example.com">
+              <br>
+            <label>Phone</label>
+              <br>
+                <input type="tel" name="phone" aria-label="enter your phone number here" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(000)-000-0000">
+              <br>
+              <br>
+            <textarea name="comments" rows="6" cols="30" placeholder="Please, we are gladly to read your suggestions..."></textarea>
+              <br>
+                <button id="submit" type="button" name="button">Submit</button>
+          </form>
+         </aside>
+         <!-- Copytright Info -->
+         <aside class="footer">
+            <p><b>&copy; 2020 Bermejo &amp; Gallego Designs</b></p>
+            <p>All rights reserved to the owner of this website</p>
+         </aside>
+      </footer>
+   </body>
+</html>
